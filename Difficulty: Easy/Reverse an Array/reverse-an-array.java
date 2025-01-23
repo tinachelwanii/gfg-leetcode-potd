@@ -38,15 +38,5 @@ class Solution {
             last--;
         }
     }
-
-    public static void main(String args[]) {
-        int arr[] = {1, 4, 3, 2, 6, 5}; // Correct array initialization syntax
-        Solution solution = new Solution(); // Create an object of the Solution class
-        solution.reverseArray(arr); // Call the method using the object
-        
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " "); // Use print() instead of println() for space-separated output
-        }
-        System.out.println(); // Add a newline after the loop
-    }
 }
+    
