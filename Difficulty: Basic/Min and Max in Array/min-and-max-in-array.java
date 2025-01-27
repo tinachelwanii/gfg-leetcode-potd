@@ -34,18 +34,18 @@ For Example -> return new Pair(minimum,maximum)
 */
 class Solution {
     public Pair<Integer, Integer> getMinMax(int[] arr) {
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-        for(int i : arr){
-            if(i < min) 
-            min = i;
-            if(i > max) 
-            max = i;
+    int max=Integer.MIN_VALUE;
+    int min=Integer.MAX_VALUE;
+    for(int i:arr){
+        if(i>max){
+            max=i;
+        }if(i<min){
+            min=i;
         }
-        return new Pair(min, max);
+    }
+        return new Pair<>(min,max);
     }
 }
-
 
 //{ Driver Code Starts.
 
