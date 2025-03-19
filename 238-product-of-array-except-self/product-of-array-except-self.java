@@ -7,8 +7,8 @@ class Solution {
             answer[i]=prefix;
             prefix*=nums[i];
         }
+
         int suffix=1;
-        
         for(int i=n-2;i>=0;i--){
                 suffix*=nums[i+1];
                 answer[i]*=suffix;
